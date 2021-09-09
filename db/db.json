@@ -1,0 +1,71 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "firstName": "Boris",
+      "lastName": "Johnson",
+      "blockContact": true,
+      "addressId": 1
+    },
+    {
+      "id": 2,
+      "firstName": "The",
+      "lastName": "Queen",
+      "blockContact": false,
+      "addressId": 2
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "blockContact": "",
+      "addressId": 3,
+      "id": 3
+    },
+    {
+      "firstName": "Onyeka",
+      "lastName": "Unachukwu",
+      "blockContact": "",
+      "addressId": 4,
+      "id": 4
+    },
+    {
+      "firstName": "Onyeka",
+      "lastName": "Unachukwu",
+      "blockContact": "",
+      "addressId": 5,
+      "id": 5
+    }
+  ],
+  "addresses": [
+    {
+      "id": 1,
+      "street": "10 Downing Street",
+      "city": "London",
+      "postCode": "SW1A 2AB"
+    },
+    {
+      "id": 2,
+      "street": "Buckingham Palace",
+      "city": "London",
+      "postCode": "SW1A 1AA"
+    },
+    {
+      "street": "",
+      "city": "",
+      "postCode": "",
+      "id": 3
+    },
+    {
+      "street": "44 Tudor Street, Winson Green",
+      "city": "Birmingham",
+      "postCode": "B18 4DG",
+      "id": 4
+    },
+    {
+      "street": "44 Tudor Street, Winson Green",
+      "city": "Birmingham",
+      "postCode": "B18 4DG",
+      "id": 5
+    }
+  ]
+}
