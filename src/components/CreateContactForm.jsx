@@ -7,7 +7,7 @@ function CreateContactForm(props) {
 
   const [firstName, setFirstName] = useState("")
   const [lastName, setLastName] = useState("")
-  const [blockContact, setBlockContact] = useState("")
+  const [blockContact, setBlockContact] = useState(false)
   const [street, setStreet] = useState("")
   const [city, setCity] = useState("")
   const [postCode, setPostCode] = useState("")
