@@ -83,30 +83,17 @@ function CreateContactForm(props) {
       })
   }
 
-  const handleFirstName= event =>{
-    setFirstName(event.target.value)
-  }
+  const handleFirstName= event => {setFirstName(event.target.value)};
   
-  const handlelastName= event =>{
-    setLastName(event.target.value)
-  }
+  const handlelastName= event => {setLastName(event.target.value)};
 
-  const handleBlockCheckbox= event =>{
-    setBlockContact(event.target.checked)
-  }
+  const handleBlockCheckbox= event => {setBlockContact(event.target.checked)};
 
-  const handleStreet= event =>{
-    setStreet(event.target.value)
-  }
+  const handleStreet= event => {setStreet(event.target.value)};
 
-  const handleCity= event =>{
-    setCity(event.target.value)
-  }
+  const handleCity= event => {setCity(event.target.value)};
 
-  const handlePostCode= event =>{
-    setPostCode(event.target.value)
-  }
-  
+  const handlePostCode= event => {setPostCode(event.target.value)};  
 
   return (
     <form className="form-stack light-shadow center contact-form" onSubmit={handleSubmit}>

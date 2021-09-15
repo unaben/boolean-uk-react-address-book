@@ -15,25 +15,18 @@
       "addressId": 2
     },
     {
-      "firstName": "",
-      "lastName": "",
-      "blockContact": "",
+      "firstName": "Onyeka",
+      "lastName": "Unachukwu",
+      "blockContact": false,
       "addressId": 3,
       "id": 3
     },
     {
-      "firstName": "Onyeka",
-      "lastName": "Unachukwu",
-      "blockContact": "",
+      "firstName": "Williams",
+      "lastName": "Bond",
+      "blockContact": true,
       "addressId": 4,
       "id": 4
-    },
-    {
-      "firstName": "Onyeka",
-      "lastName": "Unachukwu",
-      "blockContact": "",
-      "addressId": 5,
-      "id": 5
     }
   ],
   "addresses": [
@@ -50,22 +43,16 @@
       "postCode": "SW1A 1AA"
     },
     {
-      "street": "",
-      "city": "",
-      "postCode": "",
+      "street": "44 Tudor Street, Winson Green",
+      "city": "Birmingham",
+      "postCode": "B18 4DG",
       "id": 3
     },
     {
-      "street": "44 Tudor Street, Winson Green",
+      "street": "60 Westbury Road",
       "city": "Birmingham",
-      "postCode": "B18 4DG",
+      "postCode": "B17 8JH",
       "id": 4
-    },
-    {
-      "street": "44 Tudor Street, Winson Green",
-      "city": "Birmingham",
-      "postCode": "B18 4DG",
-      "id": 5
     }
   ]
 }

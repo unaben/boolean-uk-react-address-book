@@ -2,25 +2,25 @@ import { useState, useEffect } from "react";
 import ContactsList from "./components/ContactsList";
 import CreateContactForm from "./components/CreateContactForm";
 import "./styles.css";
-import EditForm from "./components/EditForm";
+import EditContactForm from "./components/EditContactForm";
 
 export default function App() {
   const [contacts, setContacts] = useState([]);
-  const [hideForm, setHideForm] = useState(true);
-  const [editForm, setEditForm] = useState(true);
+  const [hideForm, setHideForm] = useState(true); 
+  const [contactToEdit, setContactToEdit] = useState([]); 
 
-  const [contactEdit, setContactEdit] = useState([]);
-  console.log("Inside contactEdit: ", contactEdit);
+console.log("Inside State : ", contacts, hideForm, contactToEdit);
 
   // [TODO] Write a useEffect to fetch contacts here...
+
   useEffect(() => {
 
     fetch(`http://localhost:3030/contacts`)
     .then((res) => res.json())
-    .then((serverContacts) => {
-    console.log("Inside inComingcontacts", serverContacts)
+    .then((inComingContactsData) => {
+    console.log("Inside inComingcontacts", inComingContactsData)
 
-      setContacts(serverContacts)
+      setContacts(inComingContactsData)
   })
   }, []);  
 
@@ -28,16 +28,25 @@ export default function App() {
 
   return (
     <>
-      <ContactsList
+     <ContactsList
         contacts={contacts}
         hideForm={hideForm}
         setHideForm={setHideForm}
-        editForm={editForm}
-        setEditForm={setEditForm}
-        setContactEdit={setContactEdit}
+        setContactToEdit={setContactToEdit}
       />
-      <main>{!hideForm && <CreateContactForm contacts={contacts} setContacts={setContacts}/>}
-            {!editForm && <EditForm setContacts={setContacts} contactEdit={contactEdit} />} 
+      <main>
+        {!hideForm && (
+          <CreateContactForm 
+          contacts={contacts} 
+          setContacts={setContacts} 
+          />
+        )}
+        {/* EditContactForm is the component we need to send the data*/}
+        <EditContactForm
+          contacts={contacts}
+          setContacts={setContacts}
+          contactToEdit={contactToEdit}
+          />
       </main>
 
     </>
